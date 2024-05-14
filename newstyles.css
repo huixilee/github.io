@@ -1,0 +1,49 @@
+<style>
+  /* Style for the collapsible */
+  .collapsible {
+    background-color: #f1f1f1;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+  }
+
+  /* Plus icon */
+  .plus-icon::after {
+    content: '\002B';
+    font-size: 20px;
+    float: right;
+    margin-left: 5px;
+  }
+
+  /* Minus icon */
+  .minus-icon::after {
+    content: '\2212';
+    font-size: 20px;
+    float: right;
+    margin-left: 5px;
+  }
+
+  /* Hide content by default */
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: white;
+    transition: max-height 0.2s ease-out;
+  }
+
+  /* Show content when collapsible is open */
+  .active {
+    display: block;
+  }
+</style>
+
+img {
+    height: 10%;
+    width: 10%;
+
+}
